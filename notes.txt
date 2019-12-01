@@ -1,0 +1,78 @@
+1. List , Tuples and Strings are sequences
+
+we can use indexing , slicing (Slice out substrings , sublists , subtuples ex x[1:3], x[:3], x[-1] (last element), x[3:])
+
+searching with  in or not in ,  we can check whether a element exists in the list , string or tuple .. return type is boolean.
+
+*Creating a List
+
+x = list()
+x = [1,2,3,4,5]
+x = list(tuple1)
+
+*Creating a tuple
+
+x = ()
+x = tuple()
+x = tuple(list1)
+
+*Creating a set
+
+x = {1,2,3,4}
+x = set()
+x = set(list1) ---- strips all the duplicates from the list1 (good way to remove dups)
+
+Sets contains only unique items and strips duplicates
+
+*set operations
+
+x = set()
+
+x.add(item)
+x.remove(item)
+len(x)
+
+to check whether a item is in set --- item in x  , item not in x ----returns a boolean
+x.clear() to delete all items from set
+
+*Creating a dictionary
+
+x = {
+    "abc":10,
+    "hei":20,
+    "ZzZ":30
+} //similar to javascript
+
+x = dict()
+
+*add or change item in dictionary
+
+x["abc"] = 23
+
+*remove item from dictionary
+
+del x["abc"]
+
+*len(x) -- length of x
+
+*Search if item exists
+
+item in x or item not in x -- returns boolean. Only checks for keys
+
+*accessing keys and values of dictionary
+
+x.keys()
+x.values()
+x.items() -- key value pairs
+
+* iterating through keys and values in dictionary
+
+for key in x:
+    print(key)
+
+for key,value in x.items():
+    print(key,value)
+
+
+
+
