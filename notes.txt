@@ -37,11 +37,13 @@ x.clear() to delete all items from set
 
 *Creating a dictionary
 
+**Since been using js for a while...consider js object and python dictionary similar
+
 x = {
     "abc":10,
     "hei":20,
     "ZzZ":30
-} //similar to javascript
+} //similar to javascript object
 
 x = dict()
 
