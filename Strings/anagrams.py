@@ -34,3 +34,13 @@ for i in s2:
 
 print(cmp(d1,d1))
 
+
+
+
+
+
+
+
+
+
+
