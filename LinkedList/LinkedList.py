@@ -1,5 +1,6 @@
 class Node:
     def __init__(self,data):
+        #declare object variable or instance variables
         self.data = data
         self.next = None
 
@@ -56,6 +57,23 @@ class LinkedList:
             print("{} removed successfully".format(current.data))
             self.printList()
 
+    def removeFromLast(self):
+        if(self.head == None):
+            self.printList()
+        elif(self.head.next == None):
+            self.head = None
+        else:
+            prev = self.head
+            ahead = self.head.next
+            while(ahead.next!=None):
+                ahead = ahead.next
+                prev = prev.next
+
+            prev.next = None
+
+        self.printList()
+
+
 
 
 
@@ -69,6 +87,13 @@ if __name__ == "__main__":
     l1.insertAtFront(20)
     l1.insertAtFront(24)
     l1.removeFromFront()
+    l1.removeFromLast()
+    l1.removeFromLast()
+    l1.removeFromLast()
+
+
+
+
 
 
     

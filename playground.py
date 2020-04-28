@@ -2,20 +2,20 @@
 
 # print(s)
 
-a = [2,1,1,1]
+# a = [2,1,1,1]
 
-maxi = a[0]
-second = a[len(a)-1]
+# maxi = a[0]
+# second = a[len(a)-1]
 
-for i in range(len(a)):
+# for i in range(len(a)):
 
-    if(a[i]>maxi):
-        maxi = a[i]
-    elif(a[i]>second and a[i]<maxi ):
-        second = a[i]
+#     if(a[i]>maxi):
+#         maxi = a[i]
+#     elif(a[i]>second and a[i]<maxi ):
+#         second = a[i]
 
-print("second:{}".format(second))
-print("max:{}".format(maxi))
+# print("second:{}".format(second))
+# print("max:{}".format(maxi))
 
 # a = [2,7,4,1,8,1]
 
@@ -42,3 +42,58 @@ print("max:{}".format(maxi))
 
 # print(a)
 
+#shifting characters to left or right
+
+# s = "abcde"
+
+# # "deabc"
+
+# n = len(s)
+
+# s = s[n-2:] + s[0:n-2]
+
+# # shift right by 2 char
+# print(s)
+
+
+
+# # shift left
+# s = "abcde"
+
+# # cdeab
+
+# s = s[2:] + s[0:2]
+
+# print(s)
+
+# s="1234**3*31231****138"
+
+# s = s.replace("*","")
+
+# print(s)
+
+
+
+
+
+
+# p = '*'*3
+
+# print(p)
+#subarray with max sum
+
+a = [-1,-2,-3,40,-4,-5,3,3,5]
+s = 0
+maxi = 0
+for i in range(len(a)):
+    s = s + a[i]
+
+    if(s<0):
+        s = 0
+
+    if(s>maxi):
+        maxi = s
+
+print(s)
+
+    
