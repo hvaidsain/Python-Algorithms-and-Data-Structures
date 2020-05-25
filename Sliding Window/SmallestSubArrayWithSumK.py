@@ -30,7 +30,7 @@ for i in range(0,len(a)):
         mini = min(mini,i-left+1)
         sum = sum - a[left]
         left+=1
-        
+    
 print(mini)
 
         
